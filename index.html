@@ -1,0 +1,10 @@
+<div id="includedContent"></div>
+<script>
+  // Use the Fetch API to load the content of included.html
+  fetch("hello.html")
+    .then((response) => response.text())
+    .then((html) => {
+      // Set the content of the div with the id 'includedContent' to the HTML code retrieved from included.html
+      document.getElementById("includedContent").innerHTML = html;
+    });
+</script>
